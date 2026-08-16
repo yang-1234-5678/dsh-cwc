@@ -1,0 +1,9 @@
+# cordis.patch.yml 配置示例
+# 复制以下内容追加到 ~/.dsh/profiles/web/cordis.patch.yml
+
+# ── 上下文体检·归档面板 ──────────────────────────────────────────
+# 自动归档: 每次 compaction/summary 落盘 → 写入 ~/.dsh/context-archives/<sid>/
+# 模型工具: cwc_archive_list / cwc_archive_show / cwc_archive_sessions
+- insert:
+    - id: cwc
+      name: './plugins/cwc/index.js'

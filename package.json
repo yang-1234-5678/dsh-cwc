@@ -1,0 +1,42 @@
+{
+  "name": "dsh-cwc",
+  "version": "1.0.0",
+  "description": "DSH 上下文体检·归档面板 — 自动归档压缩摘要、模型检索工具、跨会话聚合、保留策略。DeepSeek Harness (鲸鱼客户端) 的 Cordis 插件。",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "context-window",
+    "compaction",
+    "archive",
+    "上下文压缩",
+    "归档"
+  ],
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "files": [
+    "lib/index.js",
+    "README.md",
+    "docs/",
+    "examples/"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-fs": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-session-query": "^0.1.0-rc.6"
+  },
+  "dsh": {
+    "plugin": {
+      "id": "cwc",
+      "description": "上下文体检·归档面板(自动归档 + 模型检索)"
+    }
+  },
+  "scripts": {
+    "check": "node --check lib/index.js"
+  }
+}
