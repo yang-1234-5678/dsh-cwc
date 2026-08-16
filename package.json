@@ -1,7 +1,7 @@
 {
   "name": "dsh-cwc",
-  "version": "1.0.0",
-  "description": "DSH 上下文体检·归档面板 — 自动归档压缩摘要、模型检索工具、跨会话聚合、保留策略。DeepSeek Harness (鲸鱼客户端) 的 Cordis 插件。",
+  "version": "1.1.0",
+  "description": "DSH 上下文体检·归档面板 — 自动归档压缩摘要+原文快照、模型检索工具、跨会话聚合、保留策略、提示词优化。DeepSeek Harness (鲸鱼客户端) 的 Cordis 插件。",
   "keywords": [
     "deepseek-harness",
     "dsh",
@@ -17,6 +17,7 @@
   "main": "lib/index.js",
   "files": [
     "lib/index.js",
+    "scripts/",
     "README.md",
     "docs/",
     "examples/"
